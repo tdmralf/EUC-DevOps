@@ -26,7 +26,7 @@ terraform {
     organization = "tdm-in-the-cloud"
 
     workspaces {
-      name = "EUC-DevOps"
+      name = "TDM-DevOps"
     }
   }
 }
