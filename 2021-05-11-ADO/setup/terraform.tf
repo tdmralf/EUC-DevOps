@@ -18,10 +18,10 @@ terraform {
 
   }
   backend "remote" {
-    organization = "ned-in-the-cloud"
+    organization = "tdm-in-the-cloud"
 
     workspaces {
-      name = "terraform-tuesday-ado-setup"
+      name = "EUC-DevOps"
     }
   }
 }
