@@ -24,7 +24,7 @@ variable "ado_github_pat" {
 variable "prefix" {
   type        = string
   description = "Naming prefix for resources"
-  default     = "Inde-DevOps"
+  default     = "indedevops"
 }
 
 variable "az_location" {
