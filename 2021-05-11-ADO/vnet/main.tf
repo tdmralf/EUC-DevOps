@@ -23,13 +23,13 @@ terraform {
 variable "region" {
   type        = string
   description = "Region in Azure"
-  default     = "aueast"
+  default     = "australiaeast"
 }
 
 variable "prefix" {
   type        = string
   description = "prefix for naming"
-  default     = "Inde-DevOps"
+  default     = "indedevops"
 }
 
 ###########################
