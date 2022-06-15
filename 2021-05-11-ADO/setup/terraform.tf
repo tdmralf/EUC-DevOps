@@ -16,6 +16,11 @@ terraform {
       version = "~> 1.0"
     }
 
+    github = {
+      source = "integrations/github"
+      version = "4.26.1"
+    }
+
   }
   backend "remote" {
     organization = "tdm-in-the-cloud"
