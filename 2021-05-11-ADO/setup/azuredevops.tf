@@ -25,7 +25,7 @@ resource "azuredevops_project" "project" {
 
 resource "azuredevops_serviceendpoint_github" "serviceendpoint_github" {
   project_id            = azuredevops_project.project.id
-  service_endpoint_name = "terraform-tuesdays"
+  service_endpoint_name = "ado-to-github"
 
   auth_personal {
     personal_access_token = var.ado_github_pat
@@ -40,7 +40,7 @@ resource "azuredevops_resource_authorization" "auth" {
 
 resource "azuredevops_variable_group" "variablegroup" {
   project_id   = azuredevops_project.project.id
-  name         = "terraform-tuesdays"
+  name         = "terraform-cloud-vars"
   description  = "Variable group for pipelines"
   allow_access = true
 
